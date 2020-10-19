@@ -1,0 +1,82 @@
+.footer {
+  padding: 100px 0 0;
+  background: $pete_yellow;
+  display: flex;
+
+  @include md {
+    display: block;
+  }
+
+  &--right {
+    width: 55%;
+
+    @include md {
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    &--center {
+      max-width: 70%;
+      width: 70%;
+      margin: auto;
+    }
+  }
+
+  &--left {
+    width: 45%;
+
+    @include md {
+      width: 100%;
+    }
+
+  }
+
+  &--image {
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../dist/img/bowling1.jpg');
+    max-width: 90%;
+    width: 90%;
+    margin: 0 auto 100px;
+
+    @include md {
+      height: 450px;
+    }
+
+    @include sm {
+      height: 350px;
+    }
+
+  }
+
+  &--quote {
+    font-family: 'grotesk';
+    font-size: 30px;
+    width: 400px;
+    position: absolute;
+    margin: 20px 0 0 50px;
+    font-weight: 900;
+    line-height: 35px;
+
+    @include md {
+      width: 300px;
+      font-size: 20px;
+      line-height: 25px;
+      margin: -20px 15px -20px 15px
+    }
+
+  }
+
+  &__social--list {
+    display: flex;
+    max-width: 60%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+}

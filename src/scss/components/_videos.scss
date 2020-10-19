@@ -1,0 +1,51 @@
+.videos {
+  margin: 100px 0;
+
+  &__list {
+  }
+
+  &__item {
+    display: flex;
+    margin: 50px 0;
+
+    @include sm {
+      display: block;
+    }
+
+    &--right {
+      width: 60%;
+      display: block;
+
+      @include sm {
+        width: 100%;
+      }
+
+    }
+
+    &--left {
+      width: 40%;
+      display: block;
+
+      @include sm {
+        width: 100%;
+      }
+    }
+  }
+
+  &__thumbnail {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin: auto;
+  }
+
+  &__class {
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+
+}
